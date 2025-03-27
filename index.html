@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+  <title>三語録｜three words diary</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="wf-sawarabimincho">
+  <h1>三語録</h1>
+	<p>今日の3語を登録しましょう。</p>
+  <form id="sangoroku-form">
+		<div class="input-group">
+			<input type="text" id="word1" required>
+			<label for="word1">1語目</label>
+		</div>
+		<div class="input-group">
+			<input type="text" id="word2" required>
+			<label for="word2">2語目</label>
+		</div>
+		<div class="input-group">
+			<input type="text" id="word3" required>
+			<label for="word3">3語目</label>
+		</div>
+		<button type="submit">登録</button>
+	</form>
+
+  <ul id="history"></ul>
+
+	<div id="card-modal" class="hidden">
+		<div class="card">
+			<span id="close-modal">×</span>
+			<div id="card-content"></div>
+			<button id="save-screenshot">スクショ保存</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
